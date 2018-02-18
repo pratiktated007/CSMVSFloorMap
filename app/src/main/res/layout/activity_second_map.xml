@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- RelativeLayout holding 2 more RelativeLayouts (Upper row & Lower row) together in center-->
+    <RelativeLayout
+        android:id="@+id/relative_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="1.2"
+        android:scaleY="1.25">
+
+        <!-- RelativeLayout for Upper 6 images -->
+        <RelativeLayout
+            android:id="@+id/first_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <!-- First row s1 to s6 -->
+            <ImageView
+                android:id="@+id/s1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/s1" />
+
+            <ImageView
+                android:id="@+id/s2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s1"
+                android:layout_toRightOf="@+id/s1"
+                android:src="@drawable/s2" />
+
+            <ImageView
+                android:id="@+id/s3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s2"
+                android:layout_toRightOf="@+id/s2"
+                android:src="@drawable/s3" />
+
+            <ImageView
+                android:id="@+id/s4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s3"
+                android:layout_toRightOf="@+id/s3"
+                android:src="@drawable/s4" />
+
+            <ImageView
+                android:id="@+id/s5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s4"
+                android:layout_toRightOf="@+id/s4"
+                android:scaleX="1.01"
+                android:scaleY="1.01"
+                android:src="@drawable/s5" />
+
+            <ImageView
+                android:id="@+id/s6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s5"
+                android:layout_toRightOf="@+id/s5"
+                android:src="@drawable/s6" />
+        </RelativeLayout>
+
+        <!-- RelativeLayout for Middle 6 images -->
+        <RelativeLayout
+            android:id="@+id/second_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_row"
+            android:layout_centerHorizontal="true">
+            <!-- Second row s7 to s12 -->
+            <ImageView
+                android:id="@+id/s7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="europeanPaintingGalleryL"
+                android:src="@drawable/s7" />
+
+            <ImageView
+                android:id="@+id/s8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s7"
+                android:layout_toRightOf="@+id/s7"
+                android:onClick="europeanPaintingGalleryL"
+                android:src="@drawable/s8" />
+
+            <ImageView
+                android:id="@+id/s9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s8"
+                android:layout_toRightOf="@+id/s8"
+                android:onClick="europeanPaintingGalleryR"
+                android:scaleX="1.01"
+                android:scaleY="1.01"
+                android:src="@drawable/s9" />
+
+            <ImageView
+                android:id="@+id/s10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s9"
+                android:layout_toRightOf="@+id/s9"
+                android:src="@drawable/s10" />
+
+            <ImageView
+                android:id="@+id/s11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s10"
+                android:layout_toRightOf="@+id/s10"
+                android:onClick="indianTextilesCostumesGallery"
+                android:scaleX="1.01"
+                android:scaleY="1.01"
+                android:src="@drawable/s11" />
+
+            <ImageView
+                android:id="@+id/s12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s11"
+                android:layout_toRightOf="@+id/s11"
+                android:src="@drawable/s12" />
+        </RelativeLayout>
+
+        <!-- RelativeLayout for Lower 6 images -->
+        <RelativeLayout
+            android:id="@+id/third_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_row"
+            android:layout_centerHorizontal="true">
+            <!-- Third row s13 to s18 -->
+            <ImageView
+                android:id="@+id/s13"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/s13" />
+
+            <ImageView
+                android:id="@+id/s14"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s13"
+                android:layout_toRightOf="@+id/s13"
+                android:onClick="armsArmourGallery"
+                android:src="@drawable/s14" />
+
+            <ImageView
+                android:id="@+id/s15"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s14"
+                android:layout_toRightOf="@+id/s14"
+                android:scaleX="1.01"
+                android:scaleY="1.01"
+                android:src="@drawable/s15" />
+
+            <ImageView
+                android:id="@+id/s16"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s15"
+                android:layout_toRightOf="@+id/s15"
+                android:src="@drawable/s16" />
+
+            <ImageView
+                android:id="@+id/s17"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s16"
+                android:layout_toRightOf="@+id/s16"
+                android:src="@drawable/s17" />
+
+            <ImageView
+                android:id="@+id/s18"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/s17"
+                android:layout_toRightOf="@+id/s17"
+                android:src="@drawable/s18" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- Ground Floor Text is put below all images layout but
+    it is displayed above it because Relative ImageLayout is
+    Aligned to be Center in Parent-->
+    <RelativeLayout
+        android:id="@+id/relative_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/second_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Second Floor"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

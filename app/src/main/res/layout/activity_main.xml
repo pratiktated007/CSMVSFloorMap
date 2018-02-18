@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.csmvs.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:text="Select the Floor you want to Explore" />
+
+        <Button
+            android:id="@+id/button_ground_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Ground Floor"
+            android:onClick="ground_map"/>
+
+        <Button
+            android:id="@+id/button_first_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_ground_floor"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="First Floor"
+            android:onClick="first_map"/>
+
+        <Button
+            android:id="@+id/button_second_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_first_floor"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Second Floor"
+            android:onClick="second_map"/>
+    </RelativeLayout>
+
+</RelativeLayout>

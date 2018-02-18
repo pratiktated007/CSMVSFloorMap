@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.csmvs">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash Activity must be called first -->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity" />
+
+        <!-- Ground Floor Map Activity in Landscape orientation with NoActionBar Theme -->
+        <activity
+            android:name=".GroundMap"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- Clickable Item's Activities from Ground Floor whose data is available -->
+        <activity android:name=".SculptureGallery" />
+        <activity android:name=".PrePhotoHistoryGallery" />
+        <activity android:name=".NaturalHistorySection" />
+
+
+        <!-- First Floor Map Activity in Landscape orientation with NoActionBar Theme -->
+        <activity
+            android:name=".FirstMap"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- Clickable Item's Activities from First Floor whose data is available -->
+        <activity android:name=".MiniaturePaintingGallery" />
+        <activity android:name=".IndianMetalwareDecorativeArt" />
+        <activity android:name=".PrintsGallery" />
+        <activity android:name=".CoinsGallery" />
+
+
+        <!-- Second Floor Map Activity in Landscape orientation with NoActionBar Theme -->
+        <activity
+            android:name=".SecondMap"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- Clickable Item's Activities from Second Floor whose data is available -->
+        <activity android:name=".EuropeanPaintingGalleryL" />
+        <activity android:name=".EuropeanPaintingGalleryR" />
+        <activity android:name=".ArmsArmourGallery" />
+        <activity android:name=".IndianTextilesCostumesGallery"/>
+
+    </application>
+
+</manifest>
