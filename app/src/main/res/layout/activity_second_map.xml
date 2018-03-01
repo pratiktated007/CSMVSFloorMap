@@ -2,201 +2,350 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:orientation="horizontal">
 
-    <!-- RelativeLayout holding 2 more RelativeLayouts (Upper row & Lower row) together in center-->
     <RelativeLayout
-        android:id="@+id/relative_images"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="1.2"
-        android:scaleY="1.25">
+        android:layout_centerInParent="true"
+        android:scaleX="1.02"
+        android:scaleY="1.02">
 
-        <!-- RelativeLayout for Upper 6 images -->
+        <!-- First Row -->
         <RelativeLayout
-            android:id="@+id/first_row"
+            android:id="@+id/first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true">
+            android:scaleY="1.02">
 
-            <!-- First row s1 to s6 -->
             <ImageView
                 android:id="@+id/s1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:src="@drawable/s1" />
 
             <ImageView
                 android:id="@+id/s2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s1"
-                android:layout_toRightOf="@+id/s1"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@id/s1"
                 android:src="@drawable/s2" />
 
             <ImageView
                 android:id="@+id/s3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s2"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s2"
                 android:src="@drawable/s3" />
 
             <ImageView
                 android:id="@+id/s4"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s3"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s3"
                 android:src="@drawable/s4" />
 
             <ImageView
                 android:id="@+id/s5"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s4"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s4"
-                android:scaleX="1.01"
-                android:scaleY="1.01"
                 android:src="@drawable/s5" />
 
             <ImageView
                 android:id="@+id/s6"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s5"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s5"
+                android:onClick="indianTextilesCostumesGallery"
                 android:src="@drawable/s6" />
-        </RelativeLayout>
 
-        <!-- RelativeLayout for Middle 6 images -->
-        <RelativeLayout
-            android:id="@+id/second_row"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/first_row"
-            android:layout_centerHorizontal="true">
-            <!-- Second row s7 to s12 -->
             <ImageView
                 android:id="@+id/s7"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:onClick="europeanPaintingGalleryL"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s6"
                 android:src="@drawable/s7" />
 
             <ImageView
                 android:id="@+id/s8"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s7"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s7"
-                android:onClick="europeanPaintingGalleryL"
-                android:src="@drawable/s8" />
+                android:src="@drawable/f8" />
+        </RelativeLayout>
+
+        <!-- Second Row -->
+        <RelativeLayout
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first"
+            android:scaleY="1.01">
 
             <ImageView
                 android:id="@+id/s9"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s8"
-                android:layout_toRightOf="@+id/s8"
-                android:onClick="europeanPaintingGalleryR"
-                android:scaleX="1.01"
-                android:scaleY="1.01"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:src="@drawable/s9" />
 
             <ImageView
                 android:id="@+id/s10"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s9"
-                android:layout_toRightOf="@+id/s9"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@id/s9"
                 android:src="@drawable/s10" />
 
             <ImageView
                 android:id="@+id/s11"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s10"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s10"
-                android:onClick="indianTextilesCostumesGallery"
-                android:scaleX="1.01"
-                android:scaleY="1.01"
                 android:src="@drawable/s11" />
 
             <ImageView
                 android:id="@+id/s12"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s11"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s11"
                 android:src="@drawable/s12" />
-        </RelativeLayout>
 
-        <!-- RelativeLayout for Lower 6 images -->
-        <RelativeLayout
-            android:id="@+id/third_row"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/second_row"
-            android:layout_centerHorizontal="true">
-            <!-- Third row s13 to s18 -->
             <ImageView
                 android:id="@+id/s13"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s12"
                 android:src="@drawable/s13" />
 
             <ImageView
                 android:id="@+id/s14"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s13"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s13"
-                android:onClick="armsArmourGallery"
+                android:onClick="indianTextilesCostumesGallery"
                 android:src="@drawable/s14" />
 
             <ImageView
                 android:id="@+id/s15"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s14"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s14"
-                android:scaleX="1.01"
-                android:scaleY="1.01"
                 android:src="@drawable/s15" />
 
             <ImageView
                 android:id="@+id/s16"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s15"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s15"
                 android:src="@drawable/s16" />
+        </RelativeLayout>
+
+        <!-- Third Row -->
+        <RelativeLayout
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second"
+            android:scaleY="1.01">
 
             <ImageView
                 android:id="@+id/s17"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s16"
-                android:layout_toRightOf="@+id/s16"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:onClick="europeanPaintingGalleryL"
                 android:src="@drawable/s17" />
 
             <ImageView
                 android:id="@+id/s18"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/s17"
-                android:layout_toRightOf="@+id/s17"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@id/s17"
+                android:onClick="europeanPaintingGalleryL"
                 android:src="@drawable/s18" />
+
+            <ImageView
+                android:id="@+id/s19"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s18"
+                android:src="@drawable/s19" />
+
+            <ImageView
+                android:id="@+id/s20"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s19"
+                android:onClick="europeanPaintingGalleryR"
+                android:src="@drawable/s20" />
+
+            <ImageView
+                android:id="@+id/s21"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s20"
+                android:src="@drawable/s21" />
+
+            <ImageView
+                android:id="@+id/s22"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s21"
+                android:onClick="indianTextilesCostumesGallery"
+                android:src="@drawable/s22" />
+
+            <ImageView
+                android:id="@+id/s23"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s22"
+                android:src="@drawable/s23" />
+
+            <ImageView
+                android:id="@+id/s24"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s23"
+                android:src="@drawable/s24" />
         </RelativeLayout>
+
+        <!-- Fourth Row -->
+        <RelativeLayout
+            android:id="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/third">
+
+            <ImageView
+                android:id="@+id/s25"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/s25" />
+
+            <ImageView
+                android:id="@+id/s26"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@id/s25"
+                android:scaleX="1.01"
+                android:src="@drawable/s26" />
+
+            <ImageView
+                android:id="@+id/s27"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s26"
+                android:onClick="armsArmourGallery"
+                android:scaleX="1.01"
+                android:src="@drawable/s27" />
+
+            <ImageView
+                android:id="@+id/s28"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s27"
+                android:scaleX="1.01"
+                android:src="@drawable/s28" />
+
+            <ImageView
+                android:id="@+id/s29"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s28"
+                android:scaleX="1.01"
+                android:src="@drawable/s29" />
+
+            <ImageView
+                android:id="@+id/s30"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s29"
+                android:src="@drawable/s30" />
+
+            <ImageView
+                android:id="@+id/s31"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s30"
+                android:src="@drawable/s31" />
+
+            <ImageView
+                android:id="@+id/s32"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s31"
+                android:scaleX="1.01"
+                android:src="@drawable/s32" />
+        </RelativeLayout>
+
+        <!-- Fifth Row -->
+        <RelativeLayout
+            android:id="@+id/fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fourth">
+
+            <ImageView
+                android:id="@+id/s33"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/s33" />
+
+            <ImageView
+                android:id="@+id/s34"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@id/s33"
+                android:src="@drawable/s34" />
+
+            <ImageView
+                android:id="@+id/s35"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s34"
+                android:src="@drawable/s35" />
+
+            <ImageView
+                android:id="@+id/s36"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s35"
+                android:src="@drawable/s36" />
+
+            <ImageView
+                android:id="@+id/s37"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s36"
+                android:src="@drawable/s37" />
+
+            <ImageView
+                android:id="@+id/s38"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s37"
+                android:src="@drawable/s38" />
+
+            <ImageView
+                android:id="@+id/s39"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s38"
+                android:src="@drawable/s39" />
+
+            <ImageView
+                android:id="@+id/s40"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/s39"
+                android:src="@drawable/s40" />
+        </RelativeLayout>
+
     </RelativeLayout>
 
-    <!-- Ground Floor Text is put below all images layout but
-    it is displayed above it because Relative ImageLayout is
+
+    <!-- Second Floor Text is put below all images layout but
+    it is displayed above it because Relative Layout is
     Aligned to be Center in Parent-->
     <RelativeLayout
         android:id="@+id/relative_text"
