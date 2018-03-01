@@ -1,204 +1,421 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    tools:context="com.example.android.cookies.FirstFloorActivity">
 
-    <!-- RelativeLayout holding 2 more RelativeLayouts (Upper row & Lower row) together in center-->
     <RelativeLayout
-        android:id="@+id/relative_images"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleX="1.45"
-        android:scaleY="1.5">
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <!-- RelativeLayout for Upper 6 images -->
+        <!-- First Row -->
         <RelativeLayout
-            android:id="@+id/first_row"
+            android:id="@+id/first"
+            android:scaleY="1.15"
+            android:scaleX="1.05"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true">
+            android:layout_height="wrap_content">
 
-            <!-- First row f1 to f6 -->
             <ImageView
                 android:id="@+id/f1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:src="@drawable/f1" />
 
             <ImageView
                 android:id="@+id/f2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f1"
-                android:layout_toRightOf="@+id/f1"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@id/f1"
                 android:src="@drawable/f2" />
 
             <ImageView
                 android:id="@+id/f3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f2"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f2"
                 android:src="@drawable/f3" />
 
             <ImageView
                 android:id="@+id/f4"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f3"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f3"
                 android:src="@drawable/f4" />
 
             <ImageView
                 android:id="@+id/f5"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f4"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f4"
                 android:src="@drawable/f5" />
 
             <ImageView
                 android:id="@+id/f6"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f5"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f5"
-                android:scaleX="1.0001"
-                android:scaleY="1.0001"
                 android:src="@drawable/f6" />
-        </RelativeLayout>
 
-        <!-- RelativeLayout for Middle 6 images -->
-        <RelativeLayout
-            android:id="@+id/second_row"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/first_row"
-            android:layout_centerHorizontal="true">
-            <!-- Second row f7 to f12 -->
             <ImageView
                 android:id="@+id/f7"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/f6"
                 android:src="@drawable/f7" />
 
             <ImageView
                 android:id="@+id/f8"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f7"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f7"
-                android:onClick="miniaturePaintingGallery"
-                android:scaleX="1.01"
-                android:scaleY="1.01"
                 android:src="@drawable/f8" />
+        </RelativeLayout>
+
+        <!-- Second Row -->
+        <RelativeLayout
+            android:id="@+id/second"
+            android:scaleY="1.15"
+            android:scaleX="1.05"
+            android:layout_below="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/f9"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f8"
-                android:layout_toRightOf="@+id/f8"
-                android:onClick="indianMetalwareDecorativeArt"
-                android:scaleX="1.01"
-                android:scaleY="1.01"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:src="@drawable/f9" />
 
             <ImageView
                 android:id="@+id/f10"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f9"
-                android:layout_toRightOf="@+id/f9"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@id/f9"
                 android:src="@drawable/f10" />
 
             <ImageView
                 android:id="@+id/f11"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f10"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f10"
-                android:onClick="coinsGallery"
                 android:src="@drawable/f11" />
 
             <ImageView
                 android:id="@+id/f12"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f11"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f11"
-                android:scaleX="1.01"
-                android:scaleY="1.01"
                 android:src="@drawable/f12" />
-        </RelativeLayout>
 
-        <!-- RelativeLayout for Lower 6 images -->
-        <RelativeLayout
-            android:id="@+id/third_row"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/second_row"
-            android:layout_centerHorizontal="true">
-            <!-- Third row f13 to f18 -->
             <ImageView
                 android:id="@+id/f13"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/f12"
                 android:src="@drawable/f13" />
 
             <ImageView
                 android:id="@+id/f14"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f13"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f13"
-                android:scaleX="1.01"
-                android:scaleY="1.01"
                 android:src="@drawable/f14" />
 
             <ImageView
                 android:id="@+id/f15"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f14"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f14"
-                android:onClick="printsGallery"
-                android:scaleX="1.01"
-                android:scaleY="1.01"
                 android:src="@drawable/f15" />
 
             <ImageView
                 android:id="@+id/f16"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f15"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f15"
                 android:src="@drawable/f16" />
+        </RelativeLayout>
+
+        <!-- Third Row -->
+        <RelativeLayout
+            android:id="@+id/third"
+            android:scaleY="1.15"
+            android:scaleX="1.05"
+            android:layout_below="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/f17"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f16"
-                android:layout_toRightOf="@+id/f16"
-                android:scaleX="1.01"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:src="@drawable/f17" />
 
             <ImageView
                 android:id="@+id/f18"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_toEndOf="@+id/f17"
-                android:layout_toRightOf="@+id/f17"
-                android:scaleY="1.01"
+                android:layout_toRightOf="@id/f17"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
                 android:src="@drawable/f18" />
+
+            <ImageView
+                android:id="@+id/f19"
+                android:layout_toRightOf="@+id/f18"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f19"/>
+
+            <ImageView
+                android:id="@+id/f20"
+                android:onClick="indianMetalwareDecorativeArt"
+                android:layout_toRightOf="@+id/f19"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f20"/>
+
+            <ImageView
+                android:id="@+id/f21"
+                android:layout_toRightOf="@+id/f20"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f21"/>
+
+            <ImageView
+                android:id="@+id/f22"
+                android:layout_toRightOf="@+id/f21"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f22"/>
+
+            <ImageView
+                android:id="@+id/f23"
+                android:onClick="coinsGallery"
+                android:layout_toRightOf="@+id/f22"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f23"/>
+
+            <ImageView
+                android:id="@+id/f24"
+                android:layout_toRightOf="@+id/f23"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f24"/>
         </RelativeLayout>
+
+
+        <!-- Fourth Row -->
+        <RelativeLayout
+            android:id="@+id/fourth"
+            android:scaleY="1.15"
+            android:scaleX="1.05"
+            android:layout_below="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/f25"
+                android:onClick="miniaturePaintingGallery"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f25" />
+
+            <ImageView
+                android:id="@+id/f26"
+                android:onClick="miniaturePaintingGallery"
+                android:layout_toRightOf="@id/f25"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f26" />
+
+            <ImageView
+                android:id="@+id/f27"
+                android:layout_toRightOf="@+id/f26"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f27"/>
+
+            <ImageView
+                android:id="@+id/f28"
+                android:layout_toRightOf="@+id/f27"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f28"/>
+
+            <ImageView
+                android:id="@+id/f29"
+                android:layout_toRightOf="@+id/f28"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f29"/>
+
+            <ImageView
+                android:id="@+id/f30"
+                android:layout_toRightOf="@+id/f29"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f30"/>
+
+            <ImageView
+                android:id="@+id/f31"
+                android:onClick="coinsGallery"
+                android:layout_toRightOf="@+id/f30"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f31"/>
+
+            <ImageView
+                android:id="@+id/f32"
+                android:layout_toRightOf="@+id/f31"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f32"/>
+        </RelativeLayout>
+
+
+        <!-- Fifth Row -->
+        <RelativeLayout
+            android:id="@+id/fifth"
+            android:scaleY="1.15"
+            android:scaleX="1.05"
+            android:layout_below="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/f33"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f33" />
+
+            <ImageView
+                android:id="@+id/f34"
+                android:layout_toRightOf="@id/f33"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f34" />
+
+            <ImageView
+                android:id="@+id/f35"
+                android:layout_toRightOf="@+id/f34"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f35"/>
+
+            <ImageView
+                android:id="@+id/f36"
+                android:onClick="printsGallery"
+                android:layout_toRightOf="@+id/f35"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f36"/>
+
+            <ImageView
+                android:id="@+id/f37"
+                android:layout_toRightOf="@+id/f36"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f37"/>
+
+            <ImageView
+                android:id="@+id/f38"
+                android:layout_toRightOf="@+id/f37"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f38"/>
+
+            <ImageView
+                android:id="@+id/f39"
+                android:layout_toRightOf="@+id/f38"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f39"/>
+
+            <ImageView
+                android:id="@+id/f40"
+                android:layout_toRightOf="@+id/f39"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f40"/>
+        </RelativeLayout>
+
+
+
+        <!-- Sixth Row -->
+        <RelativeLayout
+            android:id="@+id/sixth"
+            android:scaleY="1.15"
+            android:scaleX="1.05"
+            android:layout_below="@+id/fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/f41"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f41" />
+
+            <ImageView
+                android:id="@+id/f42"
+                android:layout_toRightOf="@id/f41"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f42" />
+
+            <ImageView
+                android:id="@+id/f43"
+                android:layout_toRightOf="@+id/f42"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f43"/>
+
+            <ImageView
+                android:id="@+id/f54"
+                android:layout_toRightOf="@+id/f43"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f44"/>
+
+            <ImageView
+                android:id="@+id/f45"
+                android:layout_toRightOf="@+id/f54"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f45"/>
+
+            <ImageView
+                android:id="@+id/f46"
+                android:layout_toRightOf="@+id/f45"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f46"/>
+
+            <ImageView
+                android:id="@+id/f47"
+                android:layout_toRightOf="@+id/f46"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f47"/>
+
+            <ImageView
+                android:id="@+id/f48"
+                android:layout_toRightOf="@+id/f47"
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:src="@drawable/f48"/>
+        </RelativeLayout>
+
+
+
     </RelativeLayout>
+
 
     <!-- First Floor Text is put below all images layout but
     it is displayed above it because Relative ImageLayout is
