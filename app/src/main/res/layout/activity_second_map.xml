@@ -94,6 +94,7 @@
                 android:id="@+id/s10"
                 android:layout_width="84dp"
                 android:layout_height="54dp"
+                android:scaleY="1.02"
                 android:layout_toRightOf="@id/s9"
                 android:src="@drawable/s10" />
 
@@ -122,6 +123,7 @@
                 android:id="@+id/s14"
                 android:layout_width="84dp"
                 android:layout_height="54dp"
+                android:scaleY="1.02"
                 android:layout_toRightOf="@+id/s13"
                 android:onClick="indianTextilesCostumesGallery"
                 android:src="@drawable/s14" />
@@ -266,6 +268,7 @@
                 android:id="@+id/s31"
                 android:layout_width="84dp"
                 android:layout_height="54dp"
+                android:scaleX="1.03"
                 android:layout_toRightOf="@+id/s30"
                 android:src="@drawable/s31" />
 
@@ -351,14 +354,24 @@
         android:id="@+id/relative_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
         <TextView
             android:id="@+id/second_text"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Second Floor"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
-    </RelativeLayout>
+       </RelativeLayout>
+
+    <!-- Text to guide user, shown below the map -->
+    <TextView
+        android:id="@+id/second_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:text="Click on the Gallery you want to know more details about"/>
+
 </RelativeLayout>
