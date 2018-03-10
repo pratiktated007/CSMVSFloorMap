@@ -18,6 +18,7 @@ public class ArmsArmourGallery extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//Change this activity name depending on gallery //Change this activity name depending on gallery
         setContentView(R.layout.activity_arms_armour_gallery);
 
         expandableListView = this.findViewById(R.id.expandable_info);
@@ -28,6 +29,7 @@ public class ArmsArmourGallery extends AppCompatActivity {
         HashMap<String , String> childitems = new HashMap<String, String >();
         Cursor res;
         SQLiteDatabase db = dataBaseHelper.getWritableDatabase();
+// Change the Table Name here. Change the Table Name in Database too having space in between with either _(underscore) or no space.
         res = db.rawQuery("Select * from ARMS", null);//.getData("ARMS");
 
 
