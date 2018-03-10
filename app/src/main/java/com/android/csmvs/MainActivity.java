@@ -3,7 +3,11 @@ package com.android.csmvs;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+
+import java.io.IOException;
+import java.sql.SQLException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +15,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        DataBaseHelper myDB = new DataBaseHelper(this);
+        try {
+            Log.i("create","h");
+            myDB.createDataBase();
+        } catch (IOException e) {
+            e.printStackTrace();
+            Log.i("create error",e.getMessage());
+        }
+        try {
+            Log.i("Open","YES");
+            myDB.openDataBase();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            Log.i("Open Error",e.getMessage());
+        }
     }
 
     /**
