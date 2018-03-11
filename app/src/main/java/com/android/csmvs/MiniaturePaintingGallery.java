@@ -19,7 +19,7 @@ public class MiniaturePaintingGallery extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //Change this activity name depending on gallery //Change this activity name depending on gallery
-        setContentView(R.layout.activity_coins_gallery);
+        setContentView(R.layout.activity_miniature_painting_gallery);
 
         expandableListView = this.findViewById(R.id.expandable_info);
         dataBaseHelper = new DataBaseHelper(this);

@@ -70,7 +70,7 @@
         <!-- Clickable Item's Activities from Second Floor whose data is available -->
         <activity
             android:name=".EuropeanPaintingGalleryL"
-            android:label="European Painting Gallery (Sir D. J. Tata)" />
+            android:label="European Painting Gallery (Sir Donb Tata)" />
         <activity
             android:name=".EuropeanPaintingGalleryR"
             android:label="European Painting Gallery (Sir Ratan Tata)" />
@@ -80,10 +80,10 @@
         <activity
             android:name=".IndianTextilesCostumesGallery"
             android:label="Indian Textiles &amp; Costumes Gallery" />
-        <activity android:name=".BombaySchoolGalleryActivity" />
-        <activity android:name=".JehangirSabvalaGalleryActivity" />
-        <activity android:name=".ChineseJapaneseActivity" />
-        <activity android:name=".HimalayanArtGalleryActivity"></activity>
+        <activity android:name=".BombaySchoolGallery" />
+        <activity android:name=".JehangirSabvalaGallery" />
+        <activity android:name=".ChineseJapaneseArtGallery" />
+        <activity android:name=".HimalayanArtGallery"></activity>
     </application>
 
 </manifest>

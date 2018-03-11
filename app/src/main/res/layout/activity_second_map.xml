@@ -30,6 +30,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@id/s1"
+                android:onClick="chineseJapaneseGallery"
                 android:src="@drawable/s2" />
 
             <ImageView
@@ -37,6 +38,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s2"
+                android:onClick="chineseJapaneseGallery"
                 android:src="@drawable/s3" />
 
             <ImageView
@@ -96,6 +98,7 @@
                 android:layout_height="54dp"
                 android:scaleY="1.02"
                 android:layout_toRightOf="@id/s9"
+                android:onClick="bombaySchoolGallery"
                 android:src="@drawable/s10" />
 
             <ImageView
@@ -255,6 +258,7 @@
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s28"
                 android:scaleX="1.01"
+                android:onClick="jehangirSabvalaGallery"
                 android:src="@drawable/s29" />
 
             <ImageView

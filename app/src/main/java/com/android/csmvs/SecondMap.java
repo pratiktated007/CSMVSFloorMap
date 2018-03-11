@@ -58,4 +58,37 @@ public class SecondMap extends AppCompatActivity {
         Intent i = new Intent(this, IndianTextilesCostumesGallery.class);
         startActivity(i);
     }
+
+    /**
+     * onClick of Chinese & Japanese Art Gallery image in SecondMap Activity
+     * the method chineseJapaneseGallery will be called which will
+     * intent the user screen to ChineseJapaneseArtGallery which contains
+     * information of items available in that Gallery
+     */
+    public void chineseJapaneseGallery(View view) {
+        Intent i = new Intent(this, ChineseJapaneseArtGallery.class);
+        startActivity(i);
+    }
+
+    /**
+     * onClick of Jehangir Sabvala Gallery image in SecondMap Activity
+     * the method jehangirSabvalaGallery will be called which will
+     * intent the user screen to JehangirSabvalaGallery which contains
+     * information of items available in that Gallery
+     */
+    public void jehangirSabvalaGallery(View view) {
+        Intent i = new Intent(this, JehangirSabvalaGallery.class);
+        startActivity(i);
+    }
+
+    /**
+     * onClick of Bombay School Gallery image in SecondMap Activity
+     * the method bombaySchoolGallery will be called which will
+     * intent the user screen to BombaySchoolGallery which contains
+     * information of items available in that Gallery
+     */
+    public void bombaySchoolGallery(View view) {
+        Intent i = new Intent(this, BombaySchoolGallery.class);
+        startActivity(i);
+    }
 }

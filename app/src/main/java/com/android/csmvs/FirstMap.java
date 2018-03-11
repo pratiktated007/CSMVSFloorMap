@@ -58,4 +58,15 @@ public class FirstMap extends AppCompatActivity {
         Intent i = new Intent(this, CoinsGallery.class);
         startActivity(i);
     }
+
+    /**
+     * onClick of Himalayan Art Gallery image in FirstMap Activity
+     * the method himalayanArtGallery will be called which will
+     * intent the user screen to HimalayanArtGallery which contains
+     * information of items available in that Gallery
+     */
+    public void himalayanArtGallery(View view) {
+        Intent i = new Intent(this, HimalayanArtGallery.class);
+        startActivity(i);
+    }
 }
