@@ -60,6 +60,9 @@
         <activity
             android:name=".CoinsGallery"
             android:label="Coins Gallery" />
+        <activity
+            android:name=".HimalayanArtGallery"
+            android:label="Himalayan Art Gallery"/>
 
         <!-- Second Floor Map Activity in Landscape orientation with NoActionBar Theme -->
         <activity
@@ -80,10 +83,16 @@
         <activity
             android:name=".IndianTextilesCostumesGallery"
             android:label="Indian Textiles &amp; Costumes Gallery" />
-        <activity android:name=".BombaySchoolGallery" />
-        <activity android:name=".JehangirSabvalaGallery" />
-        <activity android:name=".ChineseJapaneseArtGallery" />
-        <activity android:name=".HimalayanArtGallery"></activity>
+        <activity
+            android:name=".BombaySchoolGallery"
+            android:label="Bombay School Gallery"/>
+        <activity
+            android:name=".JehangirSabvalaGallery"
+            android:label="Jehangir Sabvala Gallery"/>
+        <activity
+            android:name=".ChineseJapaneseArtGallery"
+            android:label="Chinese &amp; Japanese Art Gallery"/>
+
     </application>
 
 </manifest>
