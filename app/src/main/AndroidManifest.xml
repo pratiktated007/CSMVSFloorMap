@@ -31,13 +31,15 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <!-- Clickable Item's Activities from Ground Floor whose data is available -->
-        <activity android:name=".SculptureGallery"
-            android:label="Sculpture Gallery"/>
-        <activity android:name=".PrePhotoHistoryGallery"
-            android:label="Pre Photo &amp; History Gallery"/>
-        <activity android:name=".NaturalHistorySection"
-            android:label="Natural History Gallery"/>
-
+        <activity
+            android:name=".SculptureGallery"
+            android:label="Sculpture Gallery" />
+        <activity
+            android:name=".PrePhotoHistoryGallery"
+            android:label="Pre Photo &amp; History Gallery" />
+        <activity
+            android:name=".NaturalHistorySection"
+            android:label="Natural History Gallery" />
 
         <!-- First Floor Map Activity in Landscape orientation with NoActionBar Theme -->
         <activity
@@ -46,15 +48,18 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <!-- Clickable Item's Activities from First Floor whose data is available -->
-        <activity android:name=".MiniaturePaintingGallery"
-            android:label="Miniature Painting Gallery"/>
-        <activity android:name=".IndianMetalwareDecorativeArt"
-            android:label="Indian Metalware &amp; Decorative Art"/>
-        <activity android:name=".PrintsGallery"
-            android:label="Prints Gallery"/>
-        <activity android:name=".CoinsGallery"
-            android:label="Coins Gallery"/>
-
+        <activity
+            android:name=".MiniaturePaintingGallery"
+            android:label="Miniature Painting Gallery" />
+        <activity
+            android:name=".IndianMetalwareDecorativeArt"
+            android:label="Indian Metalware &amp; Decorative Art" />
+        <activity
+            android:name=".PrintsGallery"
+            android:label="Prints Gallery" />
+        <activity
+            android:name=".CoinsGallery"
+            android:label="Coins Gallery" />
 
         <!-- Second Floor Map Activity in Landscape orientation with NoActionBar Theme -->
         <activity
@@ -63,15 +68,22 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <!-- Clickable Item's Activities from Second Floor whose data is available -->
-        <activity android:name=".EuropeanPaintingGalleryL"
-            android:label="European Painting Gallery (Sir Donb Tata)"/>
-        <activity android:name=".EuropeanPaintingGalleryR"
+        <activity
+            android:name=".EuropeanPaintingGalleryL"
+            android:label="European Painting Gallery (Sir D. J. Tata)" />
+        <activity
+            android:name=".EuropeanPaintingGalleryR"
             android:label="European Painting Gallery (Sir Ratan Tata)" />
-        <activity android:name=".ArmsArmourGallery"
-            android:label="Arms &amp; Armour Gallery"/>
-        <activity android:name=".IndianTextilesCostumesGallery"
-            android:label="Indian Textiles &amp; Costumes Gallery"/>
-
+        <activity
+            android:name=".ArmsArmourGallery"
+            android:label="Arms &amp; Armour Gallery" />
+        <activity
+            android:name=".IndianTextilesCostumesGallery"
+            android:label="Indian Textiles &amp; Costumes Gallery" />
+        <activity android:name=".BombaySchoolGalleryActivity" />
+        <activity android:name=".JehangirSabvalaGalleryActivity" />
+        <activity android:name=".ChineseJapaneseActivity" />
+        <activity android:name=".HimalayanArtGalleryActivity"></activity>
     </application>
 
 </manifest>
