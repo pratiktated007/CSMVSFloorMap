@@ -1,15 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
     tools:context="com.android.csmvs.MainActivity">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:weightSum="3">
 
+
+        <LinearLayout
+            android:id="@+id/ground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:elevation="2dp"
+            android:onClick="ground_map"
+            android:layout_weight="1"
+            android:background="@drawable/ground1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:text="Ground Floor"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:elevation="2dp"
+            android:onClick="first_map"
+            android:layout_weight="1"
+            android:background="@drawable/first1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:text="First Floor"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:elevation="2dp"
+            android:onClick="second_map"
+            android:layout_weight="1"
+            android:background="@drawable/second1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:text="Second Floor"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--
         <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
@@ -26,7 +93,7 @@
             android:id="@+id/button_ground_floor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button_first_floor"
+            android:layout_below="@+id/text"
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp"
             android:background="@drawable/round_button"
@@ -34,13 +101,15 @@
             android:padding="20dp"
             android:text="Ground  Floor"
             android:textAlignment="center"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/button_first_floor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button_second_floor"
+            android:layout_below="@+id/button_ground_floor"
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp"
             android:background="@drawable/round_button"
@@ -48,13 +117,15 @@
             android:padding="20dp"
             android:text="  First  Floor   "
             android:textAlignment="center"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/button_second_floor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/text"
+            android:layout_below="@+id/button_first_floor"
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp"
             android:background="@drawable/round_button"
@@ -62,7 +133,10 @@
             android:padding="20dp"
             android:text="Second  Floor"
             android:textAlignment="center"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
             android:textSize="20sp" />
-    </RelativeLayout>
+            -->
+    </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

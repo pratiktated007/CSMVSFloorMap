@@ -38,7 +38,7 @@ public class BombaySchoolGallery extends AppCompatActivity {
         List<Bitmap> photo = new ArrayList<Bitmap>();
         while (res.moveToNext()){
             Heading.add(res.getString(1));
-            String str = "MATERIAL:\n" + res.getString(2) + "\n\nPERIOD:\n" + res.getString(3) + "\n\nACQUISITION YEAR:\n" + res.getString(4)+"\n\nPROVENANCE:\n" + res.getString(5)+"\n\nDESCRIPTION:\n" + res.getString(6)+"\n\nRELIGION:\n" + res.getString(7);
+            String str = "MATERIAL:\n" + res.getString(2) + "\n\nPERIOD:\n" + res.getString(3) + "\n\nACQUISITION YEAR:\n" + res.getString(4)+"\n\nPROVENANCE:\n" + res.getString(5)+"\n\nDESCRIPTION:\n" + res.getString(6)+"\n\nARTIST:\n" + res.getString(7);
             property.add(str);
             img = res.getBlob(res.getColumnIndex("IMAGE"));
             if(img != null) {
