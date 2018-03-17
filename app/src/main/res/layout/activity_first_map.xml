@@ -427,19 +427,19 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="First Floor"
-            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <!-- Text to guide user, shown below the map -->
-    <TextView
+    <!--TextView
         android:id="@+id/second_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:textAlignment="center"
-        android:text="Click on the Gallery you want to know more details about"/>
+        android:text="Click on the Gallery you want to know more details about"/-->
 
 </RelativeLayout>

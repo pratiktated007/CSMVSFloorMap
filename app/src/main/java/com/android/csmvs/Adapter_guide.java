@@ -13,9 +13,10 @@ import java.util.List;
 public class Adapter_guide extends BaseExpandableListAdapter {
 
     private Context ctx;
-    private List<String > heading_title;
-    private HashMap<String , String> child_title;
-    Adapter_guide(Context ctx, List<String> heading_title, HashMap<String, String> child_title){
+    private List<String> heading_title;
+    private HashMap<String, String> child_title;
+
+    Adapter_guide(Context ctx, List<String> heading_title, HashMap<String, String> child_title) {
         this.ctx = ctx;
         this.child_title = child_title;
         this.heading_title = heading_title;
@@ -60,9 +61,9 @@ public class Adapter_guide extends BaseExpandableListAdapter {
     public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
         String title = (String) this.getGroup(i);
 
-        if (view == null){
+        if (view == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = layoutInflater.inflate(R.layout.parent_layout,null);
+            view = layoutInflater.inflate(R.layout.parent_layout, null);
         }
         TextView textView = view.findViewById(R.id.heading_item);
         textView.setText(title);
@@ -72,9 +73,9 @@ public class Adapter_guide extends BaseExpandableListAdapter {
     @Override
     public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
         String title = (String) this.getChild(i, i1);
-        if(view == null){
+        if (view == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = layoutInflater.inflate(R.layout.child_guide,null);
+            view = layoutInflater.inflate(R.layout.child_guide, null);
         }
         TextView textView = view.findViewById(R.id.child_items);
         textView.setText(title);

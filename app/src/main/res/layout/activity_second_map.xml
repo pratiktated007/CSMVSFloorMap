@@ -96,9 +96,9 @@
                 android:id="@+id/s10"
                 android:layout_width="84dp"
                 android:layout_height="54dp"
-                android:scaleY="1.02"
                 android:layout_toRightOf="@id/s9"
                 android:onClick="bombaySchoolGallery"
+                android:scaleY="1.02"
                 android:src="@drawable/s10" />
 
             <ImageView
@@ -126,9 +126,9 @@
                 android:id="@+id/s14"
                 android:layout_width="84dp"
                 android:layout_height="54dp"
-                android:scaleY="1.02"
                 android:layout_toRightOf="@+id/s13"
                 android:onClick="indianTextilesCostumesGallery"
+                android:scaleY="1.02"
                 android:src="@drawable/s14" />
 
             <ImageView
@@ -257,8 +257,8 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s28"
-                android:scaleX="1.01"
                 android:onClick="jehangirSabvalaGallery"
+                android:scaleX="1.01"
                 android:src="@drawable/s29" />
 
             <ImageView
@@ -272,8 +272,8 @@
                 android:id="@+id/s31"
                 android:layout_width="84dp"
                 android:layout_height="54dp"
-                android:scaleX="1.03"
                 android:layout_toRightOf="@+id/s30"
+                android:scaleX="1.03"
                 android:src="@drawable/s31" />
 
             <ImageView
@@ -358,24 +358,25 @@
         android:id="@+id/relative_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/second_text"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Second Floor"
-            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
-       </RelativeLayout>
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
     <!-- Text to guide user, shown below the map -->
-    <TextView
+    <!--TextView
         android:id="@+id/second_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:textAlignment="center"
-        android:text="Click on the Gallery you want to know more details about"/>
+        android:text="Click on the Gallery you want to know more details about"/-->
 
 </RelativeLayout>

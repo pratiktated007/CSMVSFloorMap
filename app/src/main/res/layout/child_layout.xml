@@ -13,6 +13,7 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
+        <!-- ImageView for the images of art objects -->
         <ImageView
             android:id="@+id/info_img"
             android:layout_width="wrap_content"
@@ -21,6 +22,7 @@
             android:layout_margin="10dp"
             android:scaleType="fitXY" />
 
+        <!-- This is a TextView for all the information -->
         <TextView
             android:id="@+id/child_items"
             android:layout_width="match_parent"
@@ -28,8 +30,8 @@
             android:layout_margin="15dp"
             android:gravity="center_vertical"
             android:text="Hello World"
-            android:textColor="#000"
-            android:textSize="18sp" />
+            android:textColor="#555"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

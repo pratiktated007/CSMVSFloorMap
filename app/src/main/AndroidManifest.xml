@@ -8,12 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
-        <!-- Splash Activity must be called first -->
-        <activity
-            android:name=".SplashActivity"
-            android:theme="@style/SplashTheme">
+        android:theme="@style/IntroTheme">
+        <!-- Introduction Slides -->
+        <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +18,22 @@
             </intent-filter>
         </activity>
 
+
+        <!-- Splash Activity must be called first -->
+        <!--activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity-->
+
         <!-- Main Activity -->
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:configChanges="orientation"
-            android:screenOrientation="sensorPortrait"/>
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme" />
 
         <!-- Ground Floor Map Activity in Landscape orientation with NoActionBar Theme -->
         <activity
@@ -35,13 +44,16 @@
         <!-- Clickable Item's Activities from Ground Floor whose data is available -->
         <activity
             android:name=".SculptureGallery"
-            android:label="Sculpture Gallery" />
+            android:label="Sculpture Gallery"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".PrePhotoHistoryGallery"
-            android:label="Pre Photo &amp; History Gallery" />
+            android:label="Pre Photo &amp; History Gallery"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".NaturalHistorySection"
-            android:label="Natural History Gallery" />
+            android:label="Natural History Gallery"
+            android:theme="@style/AppTheme" />
 
         <!-- First Floor Map Activity in Landscape orientation with NoActionBar Theme -->
         <activity
@@ -52,19 +64,24 @@
         <!-- Clickable Item's Activities from First Floor whose data is available -->
         <activity
             android:name=".MiniaturePaintingGallery"
-            android:label="Miniature Painting Gallery" />
+            android:label="Miniature Painting Gallery"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".IndianMetalwareDecorativeArt"
-            android:label="Indian Metalware &amp; Decorative Art" />
+            android:label="Indian Metalware &amp; Decorative Art"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".PrintsGallery"
-            android:label="Prints Gallery" />
+            android:label="Prints Gallery"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".CoinsGallery"
-            android:label="Coins Gallery" />
+            android:label="Coins Gallery"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".HimalayanArtGallery"
-            android:label="Himalayan Art Gallery"/>
+            android:label="Himalayan Art Gallery"
+            android:theme="@style/AppTheme" />
 
         <!-- Second Floor Map Activity in Landscape orientation with NoActionBar Theme -->
         <activity
@@ -75,26 +92,32 @@
         <!-- Clickable Item's Activities from Second Floor whose data is available -->
         <activity
             android:name=".EuropeanPaintingGalleryL"
-            android:label="European Painting Gallery (Sir Donb Tata)" />
+            android:label="European Painting Gallery (Sir Dorab Tata)"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".EuropeanPaintingGalleryR"
-            android:label="European Painting Gallery (Sir Ratan Tata)" />
+            android:label="European Painting Gallery (Sir Ratan Tata)"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ArmsArmourGallery"
-            android:label="Arms &amp; Armour Gallery" />
+            android:label="Arms &amp; Armour Gallery"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".IndianTextilesCostumesGallery"
-            android:label="Indian Textiles &amp; Costumes Gallery" />
+            android:label="Indian Textiles &amp; Costumes Gallery"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".BombaySchoolGallery"
-            android:label="Bombay School Gallery"/>
+            android:label="Bombay School Gallery"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".JehangirSabvalaGallery"
-            android:label="Jehangir Sabvala Gallery"/>
+            android:label="Jehangir Sabvala Gallery"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ChineseJapaneseArtGallery"
-            android:label="Chinese &amp; Japanese Art Gallery"/>
-
+            android:label="Chinese &amp; Japanese Art Gallery"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

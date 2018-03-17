@@ -3,4 +3,19 @@
     <string name="ground_floor">Ground Floor</string>
     <string name="first_floor">First Floor</string>
     <string name="second_floor">Second Floor</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Welcome to Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</string>
+    <string name="slide_1_desc">The Museum showcases different Art Collections from around the World!</string>
+
+    <string name="slide_2_title">Explore CSMVS</string>
+    <string name="slide_2_desc">Click on the Floor you want to Explore</string>
+
+    <string name="slide_3_title">Galleries</string>
+    <string name="slide_3_desc">Select the Gallery you want to know more about</string>
+
 </resources>
