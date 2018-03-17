@@ -15,5 +15,5 @@ It is an Android app developed using Android Studio and coded using Java and XML
 ### Developers:
 + [__Saideep Dicholkar__](https://github.com/saideepd)
 + [__Chandan Choudhary__](https://github.com/chandan201998)
-+ Pratik Tated
-+ Vasant Mahadik
++ [__Pratik Tated__](https://www.linkedin.com/in/pratik-tated-765387134)
++ [__Vasant Mahadik__](https://www.linkedin.com/in/vasant-mahadik-b07257146)
