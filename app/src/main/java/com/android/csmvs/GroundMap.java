@@ -3,8 +3,10 @@ package com.android.csmvs;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 public class GroundMap extends AppCompatActivity {
 
@@ -46,5 +48,23 @@ public class GroundMap extends AppCompatActivity {
     public void groundNaturalHistorySection(View view) {
         Intent i = new Intent(this, NaturalHistorySection.class);
         startActivity(i);
+    }
+
+    /**
+     * Toast to display "Gallery Data not available"
+     * onClick on Galleries whose data is not available
+     */
+    public void toast(View view) {
+        final Toast toast = Toast.makeText(this, "Gallery Data not available", Toast.LENGTH_SHORT);
+        toast.show();
+
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 1000);
     }
 }

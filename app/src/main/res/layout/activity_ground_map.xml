@@ -90,6 +90,7 @@
                 android:layout_alignParentStart="true"
                 android:scaleX="1.0001"
                 android:scaleY="1.0001"
+                android:onClick="toast"
                 android:src="@drawable/g7" />
 
             <ImageView
@@ -100,6 +101,7 @@
                 android:layout_toRightOf="@+id/g7"
                 android:scaleX="1.0001"
                 android:scaleY="1.0001"
+                android:onClick="toast"
                 android:src="@drawable/g8" />
 
             <ImageView
@@ -129,6 +131,7 @@
                 android:layout_toRightOf="@+id/g10"
                 android:scaleX="1.0001"
                 android:scaleY="1.0001"
+                android:onClick="toast"
                 android:src="@drawable/g11" />
 
             <ImageView
@@ -139,6 +142,7 @@
                 android:layout_toRightOf="@+id/g11"
                 android:scaleX="1.0001"
                 android:scaleY="1.0001"
+                android:onClick="toast"
                 android:src="@drawable/g12" />
         </RelativeLayout>
 

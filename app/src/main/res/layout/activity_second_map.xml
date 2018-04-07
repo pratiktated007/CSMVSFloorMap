@@ -106,6 +106,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s10"
+                android:onClick="toast"
                 android:src="@drawable/s11" />
 
             <ImageView
@@ -136,6 +137,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s14"
+                android:onClick="toast"
                 android:src="@drawable/s15" />
 
             <ImageView
@@ -143,6 +145,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s15"
+                android:onClick="toast"
                 android:src="@drawable/s16" />
         </RelativeLayout>
 
@@ -174,6 +177,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s18"
+                android:onClick="toast"
                 android:src="@drawable/s19" />
 
             <ImageView
@@ -204,6 +208,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s22"
+                android:onClick="toast"
                 android:src="@drawable/s23" />
 
             <ImageView
@@ -211,6 +216,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s23"
+                android:onClick="toast"
                 android:src="@drawable/s24" />
         </RelativeLayout>
 
@@ -282,6 +288,7 @@
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/s31"
                 android:scaleX="1.01"
+                android:onClick="toast"
                 android:src="@drawable/s32" />
         </RelativeLayout>
 

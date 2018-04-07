@@ -123,6 +123,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f13"
+                android:onClick="toast"
                 android:src="@drawable/f14" />
 
             <ImageView
@@ -130,6 +131,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f14"
+                android:onClick="toast"
                 android:src="@drawable/f15" />
 
             <ImageView
@@ -154,6 +156,7 @@
                 android:id="@+id/f17"
                 android:layout_width="84dp"
                 android:layout_height="54dp"
+                android:onClick="toast"
                 android:src="@drawable/f17" />
 
             <ImageView
@@ -161,6 +164,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@id/f17"
+                android:onClick="toast"
                 android:src="@drawable/f18" />
 
             <ImageView
@@ -168,6 +172,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f18"
+                android:onClick="toast"
                 android:src="@drawable/f19" />
 
             <ImageView
@@ -190,6 +195,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f21"
+                android:onClick="toast"
                 android:src="@drawable/f22" />
 
             <ImageView
@@ -205,6 +211,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f23"
+                android:onClick="toast"
                 android:src="@drawable/f24" />
         </RelativeLayout>
 
@@ -238,6 +245,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f26"
+                android:onClick="toast"
                 android:src="@drawable/f27" />
 
             <ImageView
@@ -260,6 +268,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f29"
+                android:onClick="toast"
                 android:src="@drawable/f30" />
 
             <ImageView
@@ -275,6 +284,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f31"
+                android:onClick="toast"
                 android:src="@drawable/f32" />
         </RelativeLayout>
 
@@ -306,6 +316,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f34"
+                android:onClick="toast"
                 android:src="@drawable/f35" />
 
             <ImageView
@@ -328,6 +339,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f37"
+                android:onClick="toast"
                 android:src="@drawable/f38" />
 
             <ImageView
@@ -342,6 +354,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f39"
+                android:onClick="toast"
                 android:src="@drawable/f40" />
         </RelativeLayout>
 
@@ -408,6 +421,7 @@
                 android:layout_width="84dp"
                 android:layout_height="54dp"
                 android:layout_toRightOf="@+id/f47"
+                android:onClick="toast"
                 android:src="@drawable/f48" />
         </RelativeLayout>
 
