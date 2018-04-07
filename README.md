@@ -12,8 +12,10 @@ It is an Android app developed using Android Studio and coded using Java and XML
 ## User Interface of App
 <img src="https://user-images.githubusercontent.com/30663492/37558245-eee3894a-2a36-11e8-936f-e31325f36092.png" width="1280" height="525"/><img src="https://user-images.githubusercontent.com/30663492/37558281-6dd27130-2a37-11e8-8709-4db2e246f218.png" width="1280" height="500"/><img src="https://user-images.githubusercontent.com/30663492/37558424-e61f1a60-2a39-11e8-83cd-d6dfc45d7094.png" width="1280" height="525"/>
 
+#### Details of Step 1 of Submission Process: [Link](https://drive.google.com/file/d/1lKqHoERh2GqtURpFUY2f__UkauvLK_rM/view?usp=sharing)
+
 ### Developers:
 + [__Saideep Dicholkar__](https://github.com/saideepd)
 + [__Chandan Choudhary__](https://github.com/chandan201998)
-+ Pratik Tated
-+ Vasant Mahadik
++ [__Pratik Tated__](https://www.linkedin.com/in/pratik-tated-765387134)
++ [__Vasant Mahadik__](https://www.linkedin.com/in/vasant-mahadik-b07257146)
