@@ -19,5 +19,3 @@ It is an Android app developed using Android Studio and coded using Java and XML
 + [__Chandan Choudhary__](https://github.com/chandan201998)
 + [__Pratik Tated__](https://www.linkedin.com/in/pratik-tated-765387134)
 + [__Vasant Mahadik__](https://www.linkedin.com/in/vasant-mahadik-b07257146)
-
-Test GitHub Desktop App
